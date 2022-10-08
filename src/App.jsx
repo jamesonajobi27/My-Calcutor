@@ -15,16 +15,14 @@ export default function App() {
      setInput(event.target.value);
    console.log(event.target.value);
   }
-  // function buttonInput(event){
-  //   let num = event.target.value
-  //   console.log(num)
+  function buttonInput(event){
+    let num = event.target.value
+    setInput2( prev =>{
+      return(prev + num)
+    })
     
-  //   setInput2(prev => {
-  //     `${prev}` + `${num}`
-  //   }
-      
-  //   )
-  // }
+    console.log(input2)
+  }
 
 
 

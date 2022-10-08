@@ -8,7 +8,7 @@ export default function Digits(props){
    <button onClick={props.onClick} value="1">1</button> 
    <button onClick={props.onClick} value="2" >2</button> 
    <button onClick={props.onClick} value="3" >3</button> 
-   <button onClick={props.onClick} value="AC">AC</button>
+   <button >AC</button>
    <button onClick={props.onClick} value="4">4</button> 
    <button onClick={props.onClick} value="5">5</button> 
    <button onClick={props.onClick} value="6" >6</button>
@@ -16,7 +16,7 @@ export default function Digits(props){
    <button onClick={props.onClick} value="8">8</button> 
    <button onClick={props.onClick} value="9">9</button> 
    <button onClick={props.onClick} value="0">0</button>  
-   <button onClick={props.onClick} value="=">=</button> 
+   <button >=</button> 
       </div>
 
 )
