@@ -10,40 +10,54 @@ export default function App() {
   let [input,setInput] = React.useState("")
 
   function buttonInput(event){
-    let num = event.target.value
+    let limit = 10
+    let num = event.target.value.slice(0, limit)
     setInput( prev =>{
       return(prev + num)
     })
   }
  function OperatorInput(event){
-   let sign = event.target.value
+   const limit = 10
+   let sign =  event.target.value.slice(0, limit)
     setInput( prev => {
       return(prev + sign)
     })
- }
+  
+  }
   function Delete(){
   setInput(prev => {
      let real = prev.length
     return(prev.slice(0,real-1))
   })
   }
+  let b 
+   let p
   function Equal(){
-    return(
+    
       setInput(
-        prev =>{
-          let b = `${eval(prev)}`
-          return(b)
+        prev => {
+           b =`${Function("return " + prev)()}`;
+           return (b)
         }
+    
       )
-    )
-  }
+  } 
 
+  function AllClear(){
+    setInput(prev => {
+     let real = prev.length
+    return(prev.slice(real))
+  })
+  }
+  
   return (
     <main> 
-      <Screen1 value ={input}/>
     <Screen2  value={input}/>
       <Operators onClick={OperatorInput} />
-      <Digits onClick={buttonInput} onClick3={Equal} onClick1={Delete}  />
+      <Digits onClick={buttonInput}
+        onClick3={Equal} 
+        onClick1={Delete}
+        onClick4={AllClear}/>
  </main>
   )
 }

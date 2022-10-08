@@ -32,6 +32,7 @@ button{
   background-color: white;
 }
 input{
+  max-length:"1";
    width:235px;
    height:40px;
   margin:10px;
@@ -39,7 +40,9 @@ input{
   border-color: #0303a5;
   border-raduis:100px;
   font-size:20px;
-  
+  text-align:right;
+  padding-right:10px;
+  padding-left:10px;
 }
 
 button:hover{
