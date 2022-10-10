@@ -17,7 +17,7 @@ export default function Digits(props){
    <button onClick={props.onClick} value="9">9</button> 
    <button onClick={props.onClick} value="0">0</button>  
    <button value="" onClick={props.onClick3}>=</button> 
-      <button onClick={props.onClick} value=".">.</button>
+      <button onClick={props.onClick6} value=".">.</button>
     <button className="All"
       onClick={props.onClick4} 
       value="">All Clear</button>
