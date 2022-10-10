@@ -6,48 +6,60 @@
 
 main{
   margin: 10% auto;
-  padding:5px;
-  border:2px solid #0303a5 ;
-  width: 250px;
+  padding:10px;
+  border:2px solid #219ebc;
+  border-radius:10px;
+  width: 257px;
   display:flex;
   align-items:center;
   flex-direction:column;
-  background-color:lightblue
+  background-color:#023047
 }
 .NumberButton{
   margin:0px;
   padding:0px;
 }
+.sign{
+ background-color:lightblue;
+  color:#023047;
+  
+}
+
+
+
+
+
+
 button{
-  color: #0303a5;
+  color: white;
   text-align:left;
-  border: 2px solid #0303a5;
+  border: 2px solid white;
   border-radius:5px;
-  margin:1px;
+  margin:2px;
   text-align:center;
   height:60px;
   width:60px;
   padding:0px;
   font-size:25px;
-  background-color: white;
+  background-color: #023047;
 }
 input{
-  max-length:"1";
-   width:235px;
-   height:40px;
+ 
+   width:230px;
+   height:70px;
   margin:10px;
   border: 2px solid;
-  border-color: #0303a5;
-  border-raduis:100px;
-  font-size:20px;
+  border-color: #219ebc;
+
+  font-size:25px;
   text-align:right;
   padding-right:10px;
   padding-left:10px;
+  
 }
 
 button:hover{
-  background-color:#0303a5;
-  color:white;
+  
   cursor:pointer;
 }
 input:active{
@@ -55,5 +67,8 @@ input:active{
   
 }
 .All{
-  width:250px;
+  width:188px;
+  background-color:lightblue;
+  color:#023047;
+  
 }

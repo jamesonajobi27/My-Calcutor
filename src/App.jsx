@@ -11,7 +11,8 @@ export default function App() {
   
   let [input,setInput] = React.useState(" ");
   let [showDot, setShowDot] = React.useState(true);
-  
+   let total = input
+
   function buttonInput(event){
 
     let num = event.target.value
@@ -83,7 +84,6 @@ export default function App() {
            else if(prev[p-1] === '+'){
              a = prev.slice(0,p-1) + sign
            return(a.slice(0, 20))
-             console.log(p)
            }
            else if(prev[p-1] === '-'){
              a = prev.slice(0,p-1) + sign
@@ -117,9 +117,6 @@ export default function App() {
 
 
 
-
-
-  
   function Delete(){
   setInput(prev => {
      let real = prev.length
@@ -178,10 +175,10 @@ export default function App() {
     return(prev.slice(real))
   })
   }
-  
+   
   return (
     <main> 
-    <Screen2  value={input} />
+      <Screen2  value={input} />
       <Operators onClick={OperatorInput} />
       <Digits onClick={buttonInput}
         onClick6 ={Dot}
